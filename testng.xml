@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="tests" thread-count="2" >
+	<test name="Test1">
+		<parameter name="deviceName" value="Android SDK built for x86"/>
+		<parameter name="UDID" value="emulator-5554"/>
+		<parameter name="platformVersion" value="8.1.0"/>
+		<parameter name="URL" value="127.0.0.1:1234/wd/hub"/>
+		<classes>
+			<class name="appium_Package.Appium_TestNG_Sample_One"/>
+		</classes>
+	</test>
+	<test name="Test2">
+		<parameter name="deviceName" value="Redmi"/>
+		<parameter name="UDID" value="c154e0b10304"/>
+		<parameter name="platformVersion" value="7.0 NRD90M"/>
+		<parameter name="URL" value="127.0.0.2:3456/wd/hub"/>
+		<classes>
+			<class name="appium_Package.Appium_TestNG_Sample_One"/>
+		</classes>
+	</test>
+</suite>
